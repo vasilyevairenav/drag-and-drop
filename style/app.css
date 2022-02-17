@@ -28,10 +28,13 @@
 
 .drop-container__grid {
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
     overflow: scroll;
     border: 1px solid rgb(223, 223, 223);
+}
+
+.drop-container__grid-wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .drop-container__free {

@@ -2,6 +2,7 @@ const SQUARE_SIZE = 100;
 
 const newField = document.querySelector('.new-element');
 const gridContainer = document.querySelector('.drop-container__grid');
+const grid = document.querySelector('.drop-container__grid-wrap');
 const freeContainer = document.querySelector('.drop-container__free');
 
 const  getRandomColor = () => "hsl(" + Math.random() * 360 + ", 100%, 75%)";
@@ -53,7 +54,7 @@ newField.onpointerdown = function(event) {
         if (inGridZone) {
             square.style.position = 'relative';
             square.style.inset = 'unset';
-            gridContainer.append(square);
+            grid.append(square);
         } 
         if (!inFreeZone && !inGridZone) {
             square.remove();
